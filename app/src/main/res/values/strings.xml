@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CaptureClaim</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_description">Description</string>
+    <string name="label_amount">Amount</string>
+    <string name="label_date">Date</string>
+</resources>
