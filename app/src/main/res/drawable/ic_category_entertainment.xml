@@ -13,8 +13,8 @@
             <item android:width="28dp"
                   android:height="28dp"
                   android:gravity="center"
-                  android:drawable="@drawable/ic_accomodation_white"/>
+                  android:drawable="@drawable/ic_entertainment_white"/>
         </layer-list>
     </item>
-    <item android:drawable="@drawable/ic_accomodation_black"/>
+    <item android:drawable="@drawable/ic_entertainment_black"/>
 </selector>
