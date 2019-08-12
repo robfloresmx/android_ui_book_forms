@@ -155,4 +155,15 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:id="@+id/attachments"
+            android:layout_marginTop="@dimen/grid_spacer1"
+            android:paddingBottom="@dimen/grid_spacer1"/>
+
 </LinearLayout>
