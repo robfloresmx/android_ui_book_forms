@@ -5,4 +5,9 @@
     <string name="label_amount">Amount</string>
     <string name="label_date">Date</string>
     <string name="description_accommodation">Accommodation</string>
+    <string name="description_tools">Tools</string>
+    <string name="description_entertainment">Entertainment</string>
+    <string name="description_food">Food</string>
+    <string name="description_transportation">Transportation</string>
+    <string name="description_other">Other</string>
 </resources>

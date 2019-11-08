@@ -1,24 +1,29 @@
 package com.example.captureclaim
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
+import com.example.captureclaim.ui.DatePickerWrapper
+import com.example.captureclaim.ui.IconPickerWrapper
 
 import kotlinx.android.synthetic.main.activity_capture_claim.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class CaptureClaimActivity : AppCompatActivity() {
+
+    lateinit var selectedDate: DatePickerWrapper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_capture_claim)
         setSupportActionBar(toolbar)
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+        //Initialize Views
+        /**You don't need to hold any other references to the dateTextView,
+         * since you'll only ever need to access it through the DatePickerWrapper class.*/
+        selectedDate = DatePickerWrapper(input_date)
+        categories.setOnCheckedChangeListener(IconPickerWrapper(selected_category))
+        categories.check(R.id.other)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
